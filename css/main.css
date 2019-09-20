@@ -1,0 +1,243 @@
+* {
+      box-sizing: border-box;
+
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+
+    .container-fluid {
+      width: 96%;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+
+    }
+
+    .row::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+
+    body>section[id] {
+      padding: 20px 0px;
+    }
+
+    #top-nav-menu {
+      background-color: #00ADEF;
+      color: #07253F;
+      font-size: 12px;
+      padding: 10px 5px;
+    }
+
+    /* #top-nav-menu .contact {
+      display: inline;
+      margin-right: 30px;
+    } */
+    .contact span {
+      display: block;
+      margin-bottom: 5px;
+      color: #fff;
+
+    }
+
+    #top-nav-menu span a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    span.sign-in {
+      display: block;
+      margin-top: 5px;
+    }
+
+
+    /* Navigation */
+    #navbar {
+      padding: 5px 0px;
+      margin-bottom: 8px;
+    }
+
+    .navlinks {
+      display: none;
+      transition: all 1s;
+      line-height: 3.5;
+    }
+
+    .show-navlinks .navlinks {
+      display: block;
+      padding-top: 10px;
+    }
+
+    .navlinks a {
+      display: block;
+      text-decoration: none;
+      padding: 10px 5px;
+      line-height: 1.5;
+      margin: 0px 8px;
+      font-size: 1.25em;
+      font-weight: normal;
+      color: #07253F;
+    }
+
+    #logo {
+      /* float: left; */
+      display: inline;
+     
+    }
+    #logo img{
+      max-height: 38px;
+      /* margin-top: 8px; */
+      line-height: 3.0;
+    }
+
+    .hamburger {
+      float: right;
+      padding: 4px;
+      /* border: 1px solid #00ADEF; */
+       line-height: 3.5;
+    }
+.hamburger i.fa{
+  font-size: 2em;
+}
+    /* Banner */
+    #banner {
+      background-image: url(https://agil.ng/wp-content/uploads/2019/07/banner_magical-dubai.1555449176.jpg);
+      background-attachment: fixed;
+    }
+
+    .app-wrapper {
+      /* position: relative; */
+
+      padding: 15px 5px;
+
+    }
+
+    .ad-slider {
+      display: none;
+    }
+
+    [data-app] {
+      margin: autox;
+      background: cyan;
+    }
+
+    /* Process Visa */
+    #process-visa{
+      background-color: transparent;
+      padding: 20px 0px 20px 20px;
+    }
+    #visa-image {
+      /* background-image: url(./img/new-agil.png);
+      background-position: center;
+      background-size: cover;
+      padding: 150px; */
+      width: 100%;
+    }
+
+    .visa-ad {
+      width: 100%;
+      padding: 9px;
+      text-align: center;
+      max-height: 320px;
+    }
+
+    .visa-cta {
+      padding: 20px;
+      height: 320px;
+
+    }
+
+    .visa-cta h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5em;
+      width: 100%;
+      margin: 5px 0px 25px 0px;
+      font-weight: bolder;
+      padding: 2px;
+      color: #00ADEF;
+    }
+
+    .visa-cta article {
+      margin-bottom: 30px;
+    }
+
+    .visa-cta a.cta {
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 8px 20px;
+      margin: 15px 0px 0px 0px;
+      text-align: center;
+      background-color:  #00ADEF;
+      color: #07253F;
+      font-weight: bold;
+
+    }
+    .visa-cta a.cta:hover{
+      background-color:  #f9f9f9;
+      border: 1px solid #07253F;
+    }
+
+    /* Footer */
+    section#footer{
+      margin: 0px auto;
+      background: #111;
+      color: #eee;
+    }
+    #footer .footer-card {
+      padding: 10px 20px;
+    }
+
+    #footer .footer-card address {
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    .footer-content-wrapper::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    #footer .footer-card ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+
+    #footer .footer-card ul li {
+      margin: 4px 0px;
+    }
+/* .footer-card address i.fa{
+  font-size: 18px;
+  padding: 4px;
+} */
+    #footer .footer-card h3 {
+      padding: 5px 0px;
+      margin: 3px 0px;
+      color: greenyellow;
+    }
+    div.footnote{
+      background: gray;
+      color: #ddd;
+      line-height: 4.5;
+      margin: 0;
+      
+    }
+    .footnote span.copyright{
+      padding-left: 15px;
+    }
+
+
+    /* @import './mw-rwd.css' all; */

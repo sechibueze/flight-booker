@@ -1,0 +1,101 @@
+
+
+
+    /* // Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) {
+      
+
+
+    }
+
+    /* // Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+     
+
+      .contact {
+        display: inline;
+      }
+
+      .contact span {
+        display: inline;
+        padding-bottom: 10px;
+      }
+
+      span.sign-in {
+        display: inline;
+        text-align: right;
+        margin-left: 35px;
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      .navlinks {
+        display: block;
+        float: right;
+      }
+
+      .navlinks a {
+        display: inline;
+      }
+
+      /* Visa */
+      #visa-image {
+        float: left;
+        width: 60%;
+      }
+
+      .visa-cta {
+        width: 40%;
+        float: left;
+        padding-left: 25px;
+      }
+
+
+
+      /* Footer */
+
+      #footer .footer-card {
+        float: left;
+        width: 24%;
+       
+        padding: 5px;
+
+      }
+
+
+    }
+
+    /* // Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      body {
+         background: transparent;
+      }
+
+      span.sign-in {
+        margin-left: 100px;
+      }
+
+      [data-app] {
+        width: 68%;
+        float: left;
+      }
+
+      .ad-slider {
+        display: block;
+        width: 30%;
+        float: right;
+        background: transparent;
+      }
+    }
+
+    /* // Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      body {
+        background: transparent;
+      }
+      .visa-cta h1{
+        font-size: 58px;
+      }
+    }
