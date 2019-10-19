@@ -30,9 +30,11 @@
   <!-- <link rel="stylesheet" href="./css/fa/css/all.css"> -->
   <script src="https://kit.fontawesome.com/967bc91efc.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap" rel="stylesheet">
-
+  
+  <link rel="stylesheet" href="./css/fa.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/mw-rwd.css">
+ 
   
 </head>
 
@@ -78,11 +80,9 @@
             <a href="#"> Home</a>
             <a href="#"> Hotel </a>
             <a href="#"> Vacation Packages</a>
-              <a href="#"> Visa</a>
-              <a href="#"> About Us</a>
-              <a href="#"> Contact Us</a>
-
-
+            <a href="#"> Visa</a>
+            <a href="#"> About Us</a>
+            <a href="#"> Contact Us</a>
           </div>
         </div>
       </div>
@@ -91,16 +91,7 @@
       <div class="container">
         <div class="row app-wrapper">
           <div data-app>
-          <?php 
-              // $rwdBody = $rwdgate->getSection('BODY');
-              // if( empty($rwdBody)) { 
-          ?>
-          <?php
-              // if (in_array(FLIGHT_WIDGET, $rwdSections ))     {         
-              //     echo $rwdgate->getSection(FLIGHT_WIDGET);     
-              // }  
-          ?>
-
+         
 
           <!-- Later -->
             		   <?php
@@ -114,6 +105,12 @@
           </div>
           <div class="ad-slider">
                 <!-- Slider goes here -->
+                <!-- <h1> Slider </h1> -->
+                <ul>
+                  <li class="slide"> <img src="./img/banner1.png"></li>
+                  <li class="slide"> <img  src="./img/banner2.png"></li>
+                  <li class="slide"> <img src="./img/new-agil.png"></li>
+                </ul>
             
           </div>
   
@@ -122,16 +119,53 @@
     </section>
 
   </header>
-  <section id="">
+  <section id="widget-area">
   
     <div class="container">
-      <h1> Paste the widget here</h1>
-      <h1> Start widget </h1>
-  
+      
+      <!-- <h1> Start widget </h1> -->
+      <div  class='widget' style="">
+        
+        <?php
+            $list = $rwdgate->getSectionsList();
+          
+            if (in_array('129874768', $list ))
+            {
+                echo $rwdgate->getSection('129874768');
+            }
+        ?>
+      </div>
+      <div class='widget' style="">
+        <?php
+            $list = $rwdgate->getSectionsList();
+          
+            if (in_array('129874768', $list ))
+            {
+                echo $rwdgate->getSection('129874813');
+            }
+        ?>
+      </div>
+      <div class='widget' style="">
+        <?php
+            $list = $rwdgate->getSectionsList();
+          
+            if (in_array('129874768', $list ))
+            {
+                echo $rwdgate->getSection('129874789');
+            }
+        ?>
+      </div>
+          
                                   
-      <h1> stop widget </h1>
+      <!-- <h1> stop widget </h1> -->
     </div>
   </section>
+
+  <!-- Whatsapp -->
+  <span class="social whatsapp">
+    <a href="https://wa.me/2349060402887" target="_blank"><i class="fa fa-whatsapp"></i></a>
+  </span>
+
   <section id="process-visa">
     <div class="container-fluid">
       <div class="row">
@@ -190,11 +224,12 @@
 
   </section>
   <div class="footnote">
-    <span class="copyright">&copy; AGIL 2019 | All Rights Reserved | Site </span>
+    <span class="copyright"> &copy; AGIL 2019-<?php echo date("Y");?> | All Rights Reserved  </span>
+    <small><a href="https://lightworthng.github.io" target="_blank">Lightworth Computing</a></small>
   </div>
-  <script src="./js/hamburger.js" type="text/javascript">
-    
-  </script>
+  <script src="./js/hamburger.js" type="text/javascript"></script>
+  <script src="./js/mobile-web.js" type="text/javascript"></script>
+  <script src="./js/ad-slider.js" type="text/javascript"></script>
 </body>
 
 </html>

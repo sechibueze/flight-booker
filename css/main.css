@@ -1,3 +1,12 @@
+/* *********
+** Project: AGIL Flight Booking
+** Author URI: https://sechibueze.github.io
+** Date: October 19th, 2019.
+** Developer: Samuel Chibueze - @sechibueze
+**
+********** */
+
+
 * {
       box-sizing: border-box;
 
@@ -7,6 +16,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Montserrat', sans-serif;
+      /* background: transparent; */
     }
 
     .container {
@@ -124,14 +134,33 @@
 
     }
 
-    .ad-slider {
+    .ad-slider,.ad-slider ul li img{
       display: none;
+    }
+    .ad-slider ul{
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+    }
+    .ad-slider ul li.show img{
+      width: 100%;
+      z-index: 99;
+      max-height: 285px;
+      display: block;
+      animation-name: fadr;
+      animation-duration: 2000ms;
+    }
+    @keyframes fadr{
+      from{opacity: .3;}
+      to{opacity: 1;}
     }
 
     [data-app] {
       margin: autox;
       background: cyan;
     }
+ 
 
     /* Process Visa */
     #process-visa{
@@ -189,10 +218,30 @@
       border: 1px solid #07253F;
     }
 
+    .social.whatsapp {
+      z-index: 99;
+      position: fixed;
+      bottom: 40%;
+      left: 10px;
+     
+      padding: 10px;
+      
+      
+    }
+    .social.whatsapp a i.fa-whatsapp{
+    
+       
+    background: green;
+    color: white;
+    padding: 5px;
+    border-radius: 17px;
+    font-size: 3em;
+    }
+
     /* Footer */
     section#footer{
       margin: 0px auto;
-      background: #111;
+      background: #232F3C;
       color: #eee;
     }
     #footer .footer-card {
@@ -229,7 +278,7 @@
       color: greenyellow;
     }
     div.footnote{
-      background: gray;
+      background: #273443;
       color: #ddd;
       line-height: 4.5;
       margin: 0;
@@ -237,6 +286,10 @@
     }
     .footnote span.copyright{
       padding-left: 15px;
+    }
+    .footnote small{
+      display: block;
+      margin-left: 9px ;
     }
 
 

@@ -10,7 +10,9 @@
 
     /* // Medium devices (tablets, 768px and up) */
     @media (min-width: 768px) {
-     
+     body{
+       background: #100;
+     }
 
       .contact {
         display: inline;
@@ -51,6 +53,7 @@
         float: left;
         padding-left: 25px;
       }
+      
 
 
 
@@ -63,6 +66,10 @@
         padding: 5px;
 
       }
+      .footnote small{
+      float: right;
+      margin-right: 9px;
+    }
 
 
     }
@@ -88,6 +95,17 @@
         float: right;
         background: transparent;
       }
+      /* Widget */
+    /* section#widget-area div.widget{
+        display: inline-block;
+        width: 100px;
+      
+        background: #100;
+      }
+      .widget span{
+        background: #100;
+        color: #ffffff;
+      } */
     }
 
     /* // Extra large devices (large desktops, 1200px and up) */
